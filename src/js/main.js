@@ -90,7 +90,7 @@ var getColor = function(d) {
       weight: 0.5,
       opacity: 1,
       color: 'white',
-      fillOpacity: 0.5
+      fillOpacity: 0.7
     };
     return s;
   };

@@ -5,13 +5,16 @@
       "path": ""
     },
     "live": {
-      "bucket": "",
-      "path": ""
+      "bucket": "projects.seattletimes.com",
+      "path": "2017/local/life-expectancy"
     }
   },
   "title": "",
   "description": "",
   "url": "",
   "slug": "",
-  "tags": []
+  "tags": [],
+  "standout": false,
+  "embedded": true,
+  "production": true
 }
