@@ -1,0 +1,24 @@
+<div class="popuptext">
+  <h2 class="bigheader">Census Tract: <%= data.TRTLABEL_F %></h2>
+  <div class="address">Average lifespan for men: <%= data.men %></div>
+  <div class="address">Average lifespan for women: <%= (data.women).toFixed(2)%></div>
+  <div class="descript">
+    <%
+    var averageWomen = 83.3;
+    var averageMen = 79.3;
+    %>
+
+    <% if (<%= data.women < averageWomen %> ) { %>
+    <p>Women in this tract live <%= (averageWomen - data.women).toFixed(2) %> years under the county average. </p>
+    <% } else { %>
+    <p>Women in this tract live <%= (data.women - averageWomen).toFixed(2) %> years above the county average. </p>
+    <% } %>
+
+    <% if (<%= data.men < averageMen %> ) { %>
+    <p>Men in this tract live <%= (averageMen - data.men).toFixed(2) %> years under the county average. </p>
+    <% } else { %>
+    <p>Men in this tract live <%= (data.men - averageMen).toFixed(2) %> years above the county average. </p>
+    <% } %>
+
+  </div>
+</div>
