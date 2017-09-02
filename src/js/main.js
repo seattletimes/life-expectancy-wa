@@ -76,7 +76,7 @@ var getColor = function(d) {
      return value >= 84 ? '#2c7fb8' :
              value >= 80.1 ? '#41b6c4' :
              value >= 76.1 ? '#7fcdbb' :
-             value >= 72.1 ? '#c7e9b4' :
+             value >= 72.1 ? '#bee8a3' :
              value >= 68 ? '#ffffcc' :
              'pink' ;
     } else {
@@ -90,7 +90,7 @@ var getColor = function(d) {
       weight: 0.5,
       opacity: 1,
       color: 'white',
-      fillOpacity: 0.7
+      fillOpacity: 0.6
     };
     return s;
   };

@@ -8,16 +8,16 @@
     var averageMen = 79.300;
     %>
 
-    <% if (data.women*1 < averageWomen ) { %>
-    <p>Women in this tract live <%= (averageWomen - data.women).toFixed(2) %> years under the county average. </p>
-    <% } else { %>
-    <p>Women in this tract live <%= (data.women - averageWomen).toFixed(2) %> years above the county average. </p>
-    <% } %>
-
     <% if ( (data.men)*1 < averageMen*1 ) { %>
     <p>Men in this tract live <%= (averageMen - data.men*1).toFixed(2) %> years under the county average. </p>
     <% } else { %>
     <p>Men in this tract live <%= (data.men*1 - averageMen).toFixed(2) %> years above the county average. </p>
+    <% } %>
+
+    <% if (data.women*1 < averageWomen ) { %>
+    <p>Women in this tract live <%= (averageWomen - data.women).toFixed(2) %> years under the county average. </p>
+    <% } else { %>
+    <p>Women in this tract live <%= (data.women - averageWomen).toFixed(2) %> years above the county average. </p>
     <% } %>
 
   </div>
